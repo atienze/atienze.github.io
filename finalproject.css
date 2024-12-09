@@ -61,17 +61,6 @@ html{
     font-weight: bold;
 }
 
-/* No longer needed because image was removed from html file */
-/*
-.banner-content a{
-    margin: 0px 80px;
-}
-.banner-content img{
-    padding-top: 10px;
-    width: 40px;
-}
-*/
-
 .button{
     background-color: #2c592f;
     border-radius: 0;
@@ -123,12 +112,15 @@ main{
 .sideright img{
     width: 60%;
 }
+/* Altered sideleft and sideright in education in order to be level and 100vh for the educaiton section*/
 .sideleft img{
     width: 55%;
+    height: 33.333vh;
 }
 table,th,tr,td{
-    border: 2px solid #2c592f;
+    border: 5px none #2c592f;
     border-collapse: collapse;
+    height: 33.333vh;
 }
 table{
     background-color: #fff;
@@ -154,14 +146,14 @@ caption{
     font-weight: bold;
     padding: 40px;
 }
-#Education-Experience-header h1{
+#Education-header h1{
     color: #2c592f;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     padding: 40px;
 }
-#Weather-header h1{
+#Experience-header h1{
     color: #2c592f;
     text-align: center;
     text-transform: uppercase;
