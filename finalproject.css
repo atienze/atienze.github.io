@@ -60,6 +60,9 @@ html{
     padding-top: 400px;
     font-weight: bold;
 }
+
+/* No longer needed because image was removed from html file */
+/*
 .banner-content a{
     margin: 0px 80px;
 }
@@ -67,6 +70,8 @@ html{
     padding-top: 10px;
     width: 40px;
 }
+*/
+
 .button{
     background-color: #2c592f;
     border-radius: 0;
@@ -156,7 +161,7 @@ caption{
     font-weight: bold;
     padding: 40px;
 }
-#Photos-header h1{
+#Weather-header h1{
     color: #2c592f;
     text-align: center;
     text-transform: uppercase;
@@ -181,7 +186,7 @@ caption{
     padding-bottom: 20px;
     border-top: 6px solid #39873e;
 }
-.phototext{
+.weathertext{
     padding: 20px 100px; 
     text-align: center;
 }

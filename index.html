@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elijah Atienza</title>
     <link rel="stylesheet" href="finalproject.css">
-    <script src="finalproject.js"></script>
+    <link rel="stylesheet" href="weather-style.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                     <a href="#top">Home</a>
                     <a href="#About-header">About</a>
                     <a href="#Education-Experience-header">Education/Experience</a>
-                    <a href="#Photos-header">Photos</a>
+                    <a href="#Weather-header">Photos</a>
                     <!-- <a href="#Education-Experience-header">Education/Experience</a> -->
                     <!-- <a href="#top">Home</a> -->
                     <!-- <a href="#About-header">About</a> -->
@@ -31,11 +31,8 @@
         <div class="banner">
             <div class="banner-content">
                 <h1>ELIJAH'S PORTFOLIO</h1>
-                <p>My professional and personal life.
-                    <!-- <a href="https://www.instagram.com/elijah.atienza/"><img src="instagram.png" alt=""></a> -->
-                </p>
+                <p>My professional and personal life.</p>
             </div>
-
         </div>
 
         <main>
@@ -99,37 +96,44 @@
                 </ul>
             </div>
             <div class="clearfix-both"></div>
-            <div id="Photos-header">
-                <h1>PHOTOS</h1>
+            <div id="Weather-header">
+                <h1>WEATHER</h1>
             </div>
-            <div class="photos">
-                <img src="Picture6.jpeg" alt="">
+            
+            <div class="weather-card">
+                <div class="search">
+                    <input type="text" placeholder="enter city name"
+                    spellcheck="false">
+                    <button><img src="images/search.png"></button>
+                </div>
+                <div class="error">
+                    <p>Invalid City Name</p>
+                </div>
+                <div class="weather">
+                    <img src="images/rain.png" class="weather-icon">
+                    <h1 class="temp">22°c</h1>
+                    <h2 class="city">New York</h2>
+                    <div class="details">
+                        <div class="col">
+                            <img src="images/humidity.png">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="images/wind.png">
+                            <div>
+                                <p class="wind">15 km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="photos">
-                <img src="Picture7.jpeg" alt="">
-            </div>
-            <div class="photos">
-                <img src="Picture8.jpeg" alt="">
-            </div>
-            <div class="photos">
-                <img src="Picture9.jpeg" alt="">
-            </div>
-            <div class="clearfix-both"></div>
-            <div class="photos">
-                <img src="Picture10.jpeg" alt="">
-            </div>
-            <div class="photos">
-                <img src="Picture11.jpeg" alt="">
-            </div>
-            <div class="photos">
-                <a href="https://disneyland.disney.go.com/"><img src="Picture12.jpeg" alt=""></a>
-            </div>
-            <div class="photos">
-                <img src="Picture13.jpeg" alt="">
-            </div>
-            <div class="clearfix-both"></div>
-            <div class="phototext">
-                <p> As said in my professional description, Ive always loved to capture moments that have sentimental value to me. All these pictures above represent a point in time that meant something to me. Through photography I feel as if these experiences that ive had can be frozen in time and captured using a simple photo. 
+
+            <div class="weathertext">
+                <p> Feel free to check the weather conditions in your city! 
                 </p>
             </div>
 
@@ -143,6 +147,8 @@
                 <p>Email: <a href="mailto: elijahatienzadc@gmail.com">elijahatienzadc@gmail.com</a></p>
 
                 <p>Professional Email: <a href="mailto: atienza.elijah@outlook.com">atienza.elijah@outlook.com</a></p>
+                
+                <p>Linked In: <a href="http://linkedin.com/in/elijah-atienza-493b75244">elijah-atienza-493b75244</a></p>
 
                 <p>Instagram: <a href="https://www.instagram.com/elijah.atienza/">elijah.atienza</a></p>
 
@@ -173,6 +179,7 @@
             <p>&copy; 2022 Elijah Atienza</p>
             <br>
             <div class="socials">
+                <a href="http://linkedin.com/in/elijah-atienza-493b75244"><img src="linkedin_icon.png"></a>
                 <a href="https://www.instagram.com/elijah.atienza/"><img src="instagram.png" alt=""></a>
                 <a href="https://twitter.com/atienza_elijah"><img src="twitter-1.png" alt=""></a>
                 <a href="https://www.facebook.com/elijah.atienza.509/"><img src="facebook.png" alt=""></a>
@@ -181,7 +188,8 @@
 
     </div>
 
-
+<script src="finalproject.js"></script>
+<script src="weather-scripts.js"></script>
 </body>
 
 </html>
