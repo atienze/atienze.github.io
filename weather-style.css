@@ -101,7 +101,7 @@ body{
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     flex: 1; /* Each column takes equal width */
-    margin: 0 1%; /* Add space between columns */
+    margin: 0 30px; /* Add space between columns */
     text-align: center; /* Center-align text and card contents */
 }
 .columns img{
