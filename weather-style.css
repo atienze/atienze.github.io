@@ -95,3 +95,52 @@ body{
     margin-top: 10px;
     display: none;
 }
+.columns{
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    flex: 1; /* Each column takes equal width */
+    margin: 0 1%; /* Add space between columns */
+    text-align: center; /* Center-align text and card contents */
+}
+.columns img{
+    max-width: 100%; /* Adjust to fit within the column */
+    max-height: 40%; /* Ensure it doesn’t overflow */
+    margin-bottom: 10px; /* Add space below the image */
+    object-fit: contain; /* Keeps image proportion */
+}
+.static-weather-card{
+    font-size: 10px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 20%;
+    background: linear-gradient(0deg, #2c592f, #ebfffc);
+    color: #fff;
+    margin: 25px 0;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 15%;
+    border-style: ridge;
+    border-color: #ebfffc;
+    object-fit: contain; /* Keeps image proportion */
+}
+.static-humidity, .static-wind{
+    margin-top: -6px;
+}
+.static-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0px 20px;
+}
+
+.education-wrapper{
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Takes 90% of the container width */
+    height: 100vh; /* Full viewport height */
+    margin: 0 auto; /* Centers the layout horizontally within the page */
+}
