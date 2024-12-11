@@ -84,6 +84,8 @@ main{
     margin: 40px auto;
     background-color: #fff;
 }
+
+/* sideleft and sideright only exist in the about section now */
 .sideleft{
     float: left;
     width: 50%;
@@ -92,31 +94,15 @@ main{
     float: right;
     width: 40%;
 }
-.sideright h2{
+.sideright h2, .sideleft h2{
     text-align: center;
     color: #2c592f;
 }
-.sideright p{
+.sideright p, .sideleft p{
     text-align: center;
 }
-.sideright a{
-    text-decoration: none;
-}
-.sideleft h2{
-    text-align: center;
-    color: #2c592f;
-}
-.sideleft p{
-    text-align: center;
-}
-.sideright img{
-    width: 60%;
-}
-/* Altered sideleft and sideright in education in order to be level and 100vh for the educaiton section*/
-.sideleft img{
-    width: 55%;
-    height: 33.333vh;
-}
+
+/* Removed from html
 table,th,tr,td{
     border: 5px none #2c592f;
     border-collapse: collapse;
@@ -138,6 +124,7 @@ caption{
     background-position: center;
     color: #2c592f;
 }
+*/
 
 #About-header h1{
     color: #2c592f;
