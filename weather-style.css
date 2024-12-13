@@ -141,7 +141,12 @@ body{
     padding: 0 10px;
     margin: 0px 20px;
 }
-
+.weathertext{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
 .education-wrapper{
     display: flex;
     flex-wrap: wrap; 
