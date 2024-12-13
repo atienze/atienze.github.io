@@ -4,18 +4,20 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
-const staticWeatherIcon = document.querySelector(".static-weather-icon");
-
-// Cities for static weather display
-const staticCities = ["Mukilteo", "Edmonds", "Bellingham"];
 
 // Fetch and update static weather icons
-async function updateStaticWeather() {
-    staticCities.forEach(async (city, index) => {
+async function updateStaticWeather(city, id) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
         if (response.status == 200) {
-            const data = await response.json();
-            const iconElement = staticCities[index];
+            var data = await response.json();
+            
+            document.querySelector(`.city-${id}`).innerHTML = data.name;
+            document.querySelector(`.temp-${id}`).innerHTML = Math.round(data.main.temp) + "°F";
+            document.querySelector(`.humidity-${id}`).innerHTML = data.main.humidity + "%";
+            document.querySelector(`.wind-${id}`).innerHTML = data.wind.speed + " mp/h";
+            
+            const iconElement = document.querySelector(`.weather-icon-${id}`);
+
             if (data.weather[0].main == "Clouds") {
                 iconElement.src = "images/clouds.png";
             } 
@@ -37,8 +39,7 @@ async function updateStaticWeather() {
         } else {
             console.error(`Failed to fetch weather for ${city}: ${response.status}`);
         }
-    });
-}
+    };
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -85,4 +86,8 @@ async function checkWeather(city) {
 
 searchBtn.addEventListener("click", () => { checkWeather(searchBox.value); })
 
-/*updateStaticWeather();*/
+updateStaticWeather('Mukilteo', 'mukilteo');
+updateStaticWeather('Edmonds', 'edmonds');
+updateStaticWeather('Bellingham', 'bellingham');
+
+

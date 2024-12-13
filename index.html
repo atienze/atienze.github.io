@@ -57,51 +57,89 @@
 
             <!-- Starting new version of education here -->
             <!-- Thinking that I should do a three column layout. each column will contain a single schools information including picture, weather card, data -->
-
             <div class="education-wrapper">
                 <div class="columns">
-                    <img src="Picture3.jpeg" alt="">
+                    <img src="Picture3.jpeg" alt="" class="columns-img">
                     <div class="static-weather-card">
-                        <img src="images/rain.png" class="static-weather-icon">
-                        <h1 class="static-temp">22°c</h1>
-                        <h2 class="static-city">New York</h2>
+                        <img src="images/rain.png" class="weather-icon-mukilteo">
+                        <h1 class="temp-mukilteo">22°c</h1>
+                        <h2 class="city-mukilteo">New York</h2>
                         <div class="static-details">
                             <div class="static-col">
                                 <img src="images/humidity.png">
                                 <div>
-                                    <p class="static-humidity">50%</p>
+                                    <p class="humidity-mukilteo">50%</p>
                                     <p>humidity</p>
                                 </div>
                             </div>
                             <div class="static-col">
                                 <img src="images/wind.png">
-                            <div>
-                                <p class="static-wind">15 km/h</p>
-                                <p>Wind Speed</p>
+                                <div>
+                                    <p class="wind-mukilteo">15 km/h</p>
+                                    <p>Wind Speed</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <h3>Kamiak High School</h3>
                     <p><a href="https://www.mukilteoschools.org/Domain/412">Kamiak High School</a> was a place to have fun and meet new people but it was also a place of important learning experiences. Throughout High School you learn to manage time by dividing your days to make time for school and hobbies but the teachers all help keep students accountable.
                         <br> <i>picture credit linked</i> </p>
+                    <button onclick="updateStaticWeather('Mukilteo', 'mukilteo')">Update Weather</button>
                 </div>
                 <div class="columns">
-                    <img src="Picture4.jpeg" alt="">
+                    <img src="Picture4.jpeg" alt="" class="columns-img">
                     <div class="static-weather-card">
-
+                        <img src="images/rain.png" class="weather-icon-edmonds">
+                        <h1 class="temp-edmonds">22°c</h1>
+                        <h2 class="city-edmonds">New York</h2>
+                        <div class="static-details">
+                            <div class="static-col">
+                                <img src="images/humidity.png">
+                                <div>
+                                    <p class="humidity-edmonds">50%</p>
+                                    <p>humidity</p>
+                                </div>
+                            </div>
+                            <div class="static-col">
+                                <img src="images/wind.png">
+                                <div>
+                                    <p class="wind-edmonds">15 km/h</p>
+                                    <p>Wind Speed</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h3>Edmonds College</h3>
                     <p><a href="https://www.edmonds.edu/">Edmonds Community College</a> served the purpose of mostly education to me. Community College was a jurassic jump in education and teaching style from highschool. Professors wouldn't hold you accountable for not turning assignments in or showing up to class. This School taught me very good Time management and gave me college credits. 
                         <br> <i>picture credit linked</i></p>
+                    <button onclick="updateStaticWeather('Edmonds','edmonds')">Update Weather</button>
                 </div>
                 <div class="columns">
-                    <img src="Picture5.jpeg" alt="">
+                    <img src="Picture5.jpeg" alt="" class="columns-img">
                     <div class="static-weather-card">
-
+                        <img src="images/rain.png" class="weather-icon-bellingham">
+                        <h1 class="temp-bellingham">22°c</h1>
+                        <h2 class="city-bellingham">New York</h2>
+                        <div class="static-details">
+                            <div class="static-col">
+                                <img src="images/humidity.png">
+                                <div>
+                                    <p class="humidity-bellingham">50%</p>
+                                    <p>humidity</p>
+                                </div>
+                            </div>
+                            <div class="static-col">
+                                <img src="images/wind.png">
+                                <div>
+                                    <p class="wind-bellingham">15 km/h</p>
+                                    <p>Wind Speed</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h3>Western Washington University</h3>
                     <p>Im currently enrolled in <a href="https://www.wwu.edu/">Western Washington University</a> and my experience here has been more then I could ask for. I am only just finishing up my first quarter but the people ive met and experiences Ive had couldn't have been better. I am excited for my future because I'm still going to learn so much more and experience so many different things. <br> <i>picture credit linked</i></p>
+                    <button onclick="updateStaticWeather('Bellingham','bellingham')">Update Weather</button>
                 </div>
             </div>
 
@@ -145,6 +183,7 @@
                 </p>
             </div>
 
+            <!-- START OF EXPERIENCE -->
             <div id="Experience-header">
                 <h1>Experience</h1>
             </div>
