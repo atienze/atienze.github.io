@@ -151,3 +151,21 @@ body{
     display: flex;
     flex-wrap: wrap; 
 }
+.background-shape-wrapper{
+    position: relative;
+    padding: 50px;
+}
+.background-shape-wrapper:nth-child(even) {
+    background: #f5f5f5;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+  .background-shape-wrapper:nth-child(odd) {
+    background: #ebfffc;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+.education-background {
+    position: relative;
+    padding: 50px;
+    background: #ebfffc;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
