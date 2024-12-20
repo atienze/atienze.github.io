@@ -197,6 +197,12 @@ footer{
 .socials img{
     width: 30px;
 }
+.background-shape-wrapper{
+    position: relative;
+    padding: 50px;
+    background: #ebfffc;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -253,4 +259,37 @@ footer{
   
 .github-link:hover {
     background-color: #555;
+}
+/* To Accomodate for Smartphones */
+@media (max-width: 600px) {
+    ul {
+        padding: 10px;
+    }
+
+    li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .socials a {
+        margin: 0px 2px;
+    }
+
+    .socials img {
+        width: 20px;
+    }
+
+    .background-shape-wrapper {
+        padding: 20px;
+        clip-path: none;
+    }
 }
