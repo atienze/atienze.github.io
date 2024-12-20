@@ -30,3 +30,17 @@ function submitForm(event) {
         alert('There was an error submitting the form.');
     });
 }
+// Get all video elements
+const videos = document.querySelectorAll('.video-player');
+
+// Add an event listener to each video
+videos.forEach(video => {
+    video.addEventListener('play', () => {
+        // Pause all other videos
+        videos.forEach(otherVideo => {
+            if (otherVideo !== video) {
+                otherVideo.pause();
+            }
+        });
+    });
+});

@@ -124,6 +124,7 @@ main{
     text-transform: uppercase;
     font-weight: bold;
     padding: 40px;
+    padding-bottom: 80px;
 }
 #Contact-header h1{
     color: #2c592f;
@@ -177,7 +178,7 @@ li{
 }
 li:hover{
     transform: scale(1.05);
-    color: #007BFF;
+    color: #2b3137;
 }
 /* END OF DECLARATIONS */
 form{
@@ -200,6 +201,7 @@ footer{
 .background-shape-wrapper{
     position: relative;
     padding: 50px;
+    padding-bottom: 100px;
     background: #ebfffc;
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
@@ -208,18 +210,19 @@ footer{
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-  
 .project-description {
     flex: 1;
     min-width: 300px;
     padding: 10px;
 }
-.project-description h3{
-    margin-bottom: 10px;
+.project-name {
+    font-weight: bold;
     color: #2c592f;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .project-description p{
-    float: right;
+    float: left;
     font-weight: bold;
     font-size: small;
     margin-bottom: 10px;
@@ -250,8 +253,8 @@ footer{
     width: 200px;
     margin: 10px auto 0;
     padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
+    background-color: #2b3137;
+    color: #fafbfc;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
