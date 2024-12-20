@@ -19,22 +19,22 @@ async function updateStaticWeather(city, id) {
             const iconElement = document.querySelector(`.weather-icon-${id}`);
 
             if (data.weather[0].main == "Clouds") {
-                iconElement.src = "images/clouds.png";
+                iconElement.src = "weather_icons/clouds.png";
             } 
             else if (data.weather[0].main == "Clear") {
-                iconElement.src = "images/sun.png";
+                iconElement.src = "weather_icons/sun.png";
             } 
             else if (data.weather[0].main == "Rain") {
-                iconElement.src = "images/rain.png";
+                iconElement.src = "weather_icons/rain.png";
             } 
             else if (data.weather[0].main == "Drizzle") {
-                iconElement.src = "images/drizzle.png";
+                iconElement.src = "weather_icons/drizzle.png";
             } 
             else if (data.weather[0].main == "Mist") {
-                iconElement.src = "images/mist.png";
+                iconElement.src = "weather_icons/mist.png";
             } 
             else if (data.weather[0].main == "Snow") {
-                iconElement.src = "images/snow.png";
+                iconElement.src = "weather_icons/snow.png";
             }
         } else {
             console.error(`Failed to fetch weather for ${city}: ${response.status}`);
@@ -60,22 +60,22 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = data.wind.speed + " mp/h";
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "images/clouds.png";
+            weatherIcon.src = "weather_icons/clouds.png";
         }
         else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "images/sun.png";
+            weatherIcon.src = "weather_icons/sun.png";
         }
         else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "images/rain.png";
+            weatherIcon.src = "weather_icons/rain.png";
         }
         else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "images/drizzle.png";
+            weatherIcon.src = "weather_icons/drizzle.png";
         }
         else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "images/mist.png";
+            weatherIcon.src = "weather_icons/mist.png";
         }
         else if (data.weather[0].main == "Snow") {
-            weatherIcon.src = "images/snow.png";
+            weatherIcon.src = "weather_icons/snow.png";
         }
 
         document.querySelector(".weather").style.display = "block";
