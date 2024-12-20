@@ -180,6 +180,6 @@ body{
 
     .education-background {
         padding: 20px;
-        clip-path: none;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
