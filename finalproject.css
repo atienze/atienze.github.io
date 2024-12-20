@@ -159,17 +159,27 @@ main{
     text-align: center;
 
 }
+/* ALL THESE DECLARATIONS are for projects section*/
 ul h3{
     padding: 10px;
     text-align: center;
     color: #2c592f;
 
 }
-ul li{
-    list-style-type: none;
+ul{
     padding: 20px;
-    text-align: center;
+    list-style-type:square;
 }
+li{
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+li:hover{
+    transform: scale(1.05);
+    color: #007BFF;
+}
+/* END OF DECLARATIONS */
 form{
     padding: 20px 0;
 }
@@ -191,38 +201,56 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-  }
+}
   
-  .project-description {
+.project-description {
     flex: 1;
     min-width: 300px;
     padding: 10px;
-  }
+}
+.project-description h3{
+    margin-bottom: 10px;
+    color: #2c592f;
+}
+.project-description p{
+    float: right;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 10px;
+}
   
-  .project-media {
+.project-media {
     flex: 1;
     min-width: 300px;
     padding: 10px;
     text-align: center;
-  }
+}
   
-  .project-media video {
+.project-media video {
     max-width: 100%;
+    width: 80%;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+    display: block;
+    margin: 0 auto;
+}
+.project-media video:hover {
+    transform: none;
+}
   
-  .github-link {
-    display: inline-block;
-    margin-top: 10px;
+.github-link {
+    display: block;
+    width: 200px;
+    margin: 10px auto 0;
     padding: 10px 15px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-  }
+    text-align: center;
+}
   
-  .github-link:hover {
+.github-link:hover {
     background-color: #555;
-  }
+}
