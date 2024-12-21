@@ -168,7 +168,7 @@ body{
     position: relative;
     padding: 50px;
     background: #e6e7e9;
-    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
 }
 /* To Accomodate for Smartphones */
 @media (max-width: 600px) {

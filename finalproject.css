@@ -192,7 +192,7 @@ footer{
     padding: 50px;
     padding-bottom: 100px;
     background: #e6e7e9;
-    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+    clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 99.5%);
 }
 .project {
     display: flex;
