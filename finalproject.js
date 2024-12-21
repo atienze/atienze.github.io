@@ -7,7 +7,12 @@ function submitForm(event) {
     var email = document.getElementById('myEmail').value;
     var answer = document.getElementById('myQuestion').value;
 
-    // create a FormData object
+    if (!email.endsWith('.com')) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+    
+        // create a FormData object
     var formData = new FormData();
     formData.append("myName", name);
     formData.append("myEmail", email);
