@@ -19,13 +19,14 @@ function submitForm(event) {
         body: formData 
     })
     .then(response => {
-        console.log(response);
-        if(!response.ok) {
+        console.log('Response:', response);
+        if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         return response.text();
     })
-    .then(() => {
+    .then(data => {
+        console.log('Success:', data);
         alert("Thank you for submitting your information!");
 
         // redirect to another page
@@ -34,6 +35,11 @@ function submitForm(event) {
     .catch(error => {
         // handle errors
         console.error('Error:', error);
-        alert('There was an error submitting the form.');
+        
+        // show an alert to the user. PROBLEM: This alert is always getting ran but the data is still being sent to the Google Sheet
+        // alert('There was an error submitting the form.')
+
+        window.location.href = 'https://atienze.github.io/index.html';
     });
 }
+    

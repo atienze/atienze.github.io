@@ -123,6 +123,7 @@ main{
     text-align: center;
     align-items: center;
 }
+/* Commenting out bc im getting an error on my form submissions
 .contacttext input #mySubmit{
     transition: background-color 0.3s color 0.3s;
 }
@@ -130,7 +131,7 @@ main{
     background-color: #2b3137;
     color: #fff;
 }
-
+*/
 .contacttext input, .contacttext textarea {
     display: block;
     margin: 10px auto;
