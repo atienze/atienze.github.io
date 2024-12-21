@@ -30,8 +30,7 @@ html{
     text-align: center;
     padding: 10px 5%;
     text-decoration: none;
- 
-
+    transition: background-color 0.3s, color 0.3s;
 }
 .navbar a:hover{
     background: #fff;
@@ -60,25 +59,6 @@ html{
     padding-top: 400px;
     font-weight: bold;
 }
-/* Testing if this is being used anywhere */
-/*
-.button{
-    background-color: #2c592f;
-    border-radius: 0;
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    min-width: 150px;
-    padding: 20px 15px;
-    border-radius: 30px;
-    margin: 5% ;
-    text-align: center;
-    text-decoration: none;
-}
-*/
-
 .banner-content p a{
     margin-right: 50%;
 }
@@ -97,6 +77,11 @@ main{
     float: right;
     width: 40%;
 }
+.sideright a, .sideleft a{
+    align-items: center;
+    margin: 20px auto;
+    text-decoration: none;
+}
 .sideright h2, .sideleft h2{
     text-align: center;
     color: #2c592f;
@@ -104,14 +89,7 @@ main{
 .sideright p, .sideleft p{
     text-align: center;
 }
-#About-header h1{
-    color: #2c592f;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 40px;
-}
-#Education-header h1{
+#About-header h1, #Education-header h1, #Contact-header h1{
     color: #2c592f;
     text-align: center;
     text-transform: uppercase;
@@ -125,13 +103,6 @@ main{
     font-weight: bold;
     padding: 40px;
     padding-bottom: 80px;
-}
-#Contact-header h1{
-    color: #2c592f;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 40px;
 }
 .photos img{
     width: 25%;
@@ -150,7 +121,24 @@ main{
 }
 .contacttext{
     text-align: center;
+    align-items: center;
+}
+.contacttext input #mySubmit{
+    transition: background-color 0.3s color 0.3s;
+}
+.contacttext input #mySubmit:hover{
+    background-color: #2b3137;
+    color: #fff;
+}
 
+.contacttext input, .contacttext textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 70%;
+    max-width: 400px;
+    border: 1px solid #2b3137;
+    border-radius: 5px;
 }
 .contacttext p{
     padding: 25px 0;
@@ -202,8 +190,8 @@ footer{
     position: relative;
     padding: 50px;
     padding-bottom: 100px;
-    background: #ebfffc;
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    background: #e6e7e9;
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
 }
 .project {
     display: flex;
@@ -247,21 +235,22 @@ footer{
 .project-media video:hover {
     transform: none;
 }
-  
 .github-link {
     display: block;
     width: 200px;
-    margin: 10px auto 0;
+    margin: 30px auto 0;
     padding: 10px 15px;
-    background-color: #2b3137;
-    color: #fafbfc;
+    background-color: #fafbfc;
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    transition: background-color 0.1s, color 0.1s;
 }
   
 .github-link:hover {
-    background-color: #555;
+    background-color: #2b3137;
+    color: #fafbfc;
 }
 /* To Accomodate for Smartphones */
 @media (max-width: 600px) {

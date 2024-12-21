@@ -1,46 +1,39 @@
 function submitForm(event) {
-    // Prevent the form from submitting normally
+    // prevent the form from submitting normally
     event.preventDefault();
 
-    // Collect form data
+    // collect form data
     var name = document.getElementById('myName').value;
     var email = document.getElementById('myEmail').value;
+    var answer = document.getElementById('myQuestion').value;
 
-    // Create a FormData object
+    // create a FormData object
     var formData = new FormData();
     formData.append("myName", name);
     formData.append("myEmail", email);
+    formData.append("myQuestion", answer);
 
-    // Send the data to Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbzDfTCAI2A1gvRMMGNEA5ouuTc8Dn2iegHO10DTQs6_Dgg2EAMkjcObC8CsVid_ONhy/exec', {
-        method: 'POST',
-        body: formData
+    // send the data to Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbx7ooLmwMjOoP3t3OgPZqGqbaNIc07YcOoRRd7JjD0jiqVjqGBNq6w1EduyKQwg3txl/exec', {
+        method: 'POST', 
+        body: formData 
     })
-    .then(response => response.text())
-    .then(data => {
-        // Show a confirmation message (optional)
+    .then(response => {
+        console.log(response);
+        if(!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(() => {
         alert("Thank you for submitting your information!");
 
-        // Redirect to another page (replace with your desired URL)
-        window.location.href = 'https://atienze.github.io/index.html'; // Change this URL to where you want the user to go
+        // redirect to another page
+        window.location.href = 'https://atienze.github.io/index.html';
     })
     .catch(error => {
-        // Handle errors (optional)
+        // handle errors
         console.error('Error:', error);
         alert('There was an error submitting the form.');
     });
 }
-// Get all video elements
-const videos = document.querySelectorAll('.video-player');
-
-// Add an event listener to each video
-videos.forEach(video => {
-    video.addEventListener('play', () => {
-        // Pause all other videos
-        videos.forEach(otherVideo => {
-            if (otherVideo !== video) {
-                otherVideo.pause();
-            }
-        });
-    });
-});

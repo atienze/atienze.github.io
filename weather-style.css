@@ -16,7 +16,7 @@ body{
     padding: 40px 35px;
     text-align: center;
     border-radius: 15%;
-    border: #2c592f 3px solid;
+    border: #2b3137 3px solid;
 }
 .search{
     width: 100%;
@@ -28,6 +28,8 @@ body{
     border: 0;
     outline: 0;
     background: #ebfffc;
+    border-radius: 50%;
+    border: 2px solid #2b3137;
     color: #555;
     padding: 10px 25px;
     height: 60px;
@@ -36,17 +38,13 @@ body{
     margin-right: 16px;
     font-size: 18px;
 }
-.search button{
-    border: 0;
-    outline: 0;
+.search button {
+    border: 2px solid #2b3137;
     background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border-radius: 40%;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-}
-.search button img{
-    width: 16px;
 }
 .weather-icon{
     width: 110px;
@@ -108,7 +106,7 @@ body{
 }
 /* This columns-img only references the school photo*/
 .columns-img{
-    border: #2c592f 3px solid;;
+    border: #2b3137 3px solid;;
 }
 .columns img{
     max-width: 100%; /* Adjust to fit within the column */
@@ -128,7 +126,7 @@ body{
     text-align: center;
     border-radius: 15%;
     border-style: ridge;
-    border-color: #2c592f;
+    border-color: #2b3137;
     object-fit: contain; /* Keeps image proportion */
 }
 .static-humidity, .static-wind{
@@ -140,6 +138,21 @@ body{
     justify-content: space-between;
     padding: 0 10px;
     margin: 0px 20px;
+}
+.static-button{
+    display: block;
+    margin: 15px auto;
+    width: 40%;
+    padding: 5px;
+    max-width: 400px;
+    border: 1px solid #2b3137;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.static-button:hover {
+    background-color: #2b3137; 
+    color: #fff; 
 }
 .weathertext{
     font-weight: bold;
@@ -154,8 +167,8 @@ body{
 .education-background {
     position: relative;
     padding: 50px;
-    background: #ebfffc;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 97%);
+    background: #e6e7e9;
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
 }
 /* To Accomodate for Smartphones */
 @media (max-width: 600px) {
