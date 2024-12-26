@@ -1,3 +1,10 @@
+/* Color Scheme */
+/* MAIN 1: #2c592f - Dark Green */
+/* MAIN 2: #2b3137 - Very Dark Blue */
+/* Background 1: #fff - White */
+/* Background 2: #edeef0 - Light Gray */
+/* Background 3: #ebfffc - Light Teal */
+
 *{
     margin: 0;
     padding: 0;
@@ -167,7 +174,7 @@ body{
 .education-background {
     position: relative;
     padding: 50px;
-    background: #e6e7e9;
+    background: #edeef0;
     clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
 }
 /* To Accomodate for Smartphones */

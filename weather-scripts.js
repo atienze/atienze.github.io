@@ -4,6 +4,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
+const currentHour = new Date().getHours();
 
 // Fetch and update static weather icons
 async function updateStaticWeather(city, id) {
@@ -20,6 +21,9 @@ async function updateStaticWeather(city, id) {
 
             if (data.weather[0].main == "Clouds") {
                 iconElement.src = "weather_icons/clouds.png";
+                if (6 <= currentHour && currentHour <= 18) {
+                    iconElement.src = "weather_icons/clouds.png";
+                }
             } 
             else if (data.weather[0].main == "Clear") {
                 iconElement.src = "weather_icons/sun.png";
