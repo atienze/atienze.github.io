@@ -100,12 +100,12 @@ body{
 }
 .columns{
     display: flex;
-    flex-direction: column; /* Stack vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    flex: 1; /* Each column takes equal width */
-    margin: 0 30px; /* Add space between columns */
-    text-align: center; /* Center-align text and card contents */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    flex: 1; 
+    margin: 0 30px; 
+    text-align: center;
 }
 .columns h3{
     color: #2c592f;
@@ -116,10 +116,10 @@ body{
     border: #2b3137 3px solid;;
 }
 .columns img{
-    max-width: 100%; /* Adjust to fit within the column */
-    max-height: 40%; /* Ensure it doesn’t overflow */
-    margin-bottom: 10px; /* Add space below the image */
-    object-fit: contain; /* Keeps image proportion */
+    max-width: 100%;
+    max-height: 40%;
+    margin-bottom: 10px;
+    object-fit: contain; 
 }
 .static-weather-card{
     font-size: 10px;
