@@ -69,13 +69,13 @@ async function checkWeather(city) {
         if (data.weather[0].main == "Clouds") {
             weatherIcon.src = "weather_icons/cloudsWmoon.png";
             if (6 <= currentHour && currentHour <= 18) {
-                iconElement.src = "weather_icons/cloudsWsun.png";
+                weatherIcon.src = "weather_icons/cloudsWsun.png";
             }
         }
         else if (data.weather[0].main == "Clear") {
             weatherIcon.src = "weather_icons/moon.png";
             if (6 <= currentHour && currentHour <= 18) {
-                iconElement.src = "weather_icons/sun.png";
+                weatherIcon.src = "weather_icons/sun.png";
             }
         }
         else if (data.weather[0].main == "Rain") {
