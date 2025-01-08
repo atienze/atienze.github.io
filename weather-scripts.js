@@ -20,13 +20,16 @@ async function updateStaticWeather(city, id) {
             const iconElement = document.querySelector(`.weather-icon-${id}`);
 
             if (data.weather[0].main == "Clouds") {
-                iconElement.src = "weather_icons/clouds.png";
+                iconElement.src = "weather_icons/cloudsWmoon.png";
                 if (6 <= currentHour && currentHour <= 18) {
-                    iconElement.src = "weather_icons/clouds.png";
+                    iconElement.src = "weather_icons/cloudsWsun.png";
                 }
             } 
             else if (data.weather[0].main == "Clear") {
-                iconElement.src = "weather_icons/sun.png";
+                iconElement.src = "weather_icons/moon.png";
+                if (6 <= currentHour && currentHour <= 18) {
+                    iconElement.src = "weather_icons/sun.png";
+                }
             } 
             else if (data.weather[0].main == "Rain") {
                 iconElement.src = "weather_icons/rain.png";
@@ -64,10 +67,16 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = data.wind.speed + " mp/h";
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "weather_icons/clouds.png";
+            weatherIcon.src = "weather_icons/cloudsWmoon.png";
+            if (6 <= currentHour && currentHour <= 18) {
+                iconElement.src = "weather_icons/cloudsWsun.png";
+            }
         }
         else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "weather_icons/sun.png";
+            weatherIcon.src = "weather_icons/moon.png";
+            if (6 <= currentHour && currentHour <= 18) {
+                iconElement.src = "weather_icons/sun.png";
+            }
         }
         else if (data.weather[0].main == "Rain") {
             weatherIcon.src = "weather_icons/rain.png";
