@@ -189,16 +189,16 @@
                 <div id="Projects-header">
                     <h1>Projects & Relevent Work</h1>
                 </div>
-
                 <h2 class="project-name">X16 Computer</h2>
                 <div class="project">
                     <div class="project-description">
-                      <p>Languages: C & Assembly</p>
-                      <ul>
-                        <li>Assembler Design: Constructed a two-pass assembler used to handle assembly files, containing AT&T Syntax for x86 Assembler code, to handle label resolution and instruction conversion, ensuring compatibility with a provided emulator that I created. Bit-manipulation was also used to alter bits to represent a correct opcode and instruction within an img file that can be read by the emulator.</li>
-                        <li>Emulator Implementation: Designed and implemented a robust x16 processor emulator capable of simulating a non-pipelined, single-cycle CPU. The emulator features precise bit-level manipulation and control unit coordination to execute a full suite of operations defined by the x16 Instruction Set Architecture (ISA).</li>
-                       <!--put another bullet here but idk what yet -->
-                      </ul>
+                        <p class="lang">Languages: C & Assembly</p>
+                        <h3>Brief Description</h3>
+                        <p>This project allowed me to design and implement a custom system to deepen my understanding of system architecture and programming fundamentals. This involved writing approximately 1000 lines of C code, which significantly improved my proficiency with rigorous C syntax. I developed an assembler to translate assembly code into machine code and an emulator to execute it, simulating a basic computing environment. Throughout the project, I enhanced my debugging skills by effectively analyzing errors across multiple files, learning to strategically identify root causes using debugging tools. I now have a much deeper understanding of programming concepts, system architecture, and efficient debugging techniques, which have greatly improved my ability to work on complex codebases.</p>
+                        <h4>Insights</h4>
+                        <ul>
+                            <li> 10 total C files and about 1250 lines of code </li>
+                        </ul>
                     </div>
                     <div class="project-media">
                       <video class="video-player" controls>
@@ -212,13 +212,13 @@
                 <h2 class="project-name">Woogle, Simulated Search Engine</h2>
                 <div class="project">
                     <div class="project-description">
-                      <p>Languages: Java</p>
-                      <ul>
-                        <!--MENTION SOMEWHERE HERE THAT IT ONLY MET A DEPTH OF 3-->
-                        <li>Web Crawling & Parsing: Engineered a domain-specific crawler using recursive logic and the Jsoup library, enabling efficient HTML parsing and data extraction for comprehensive indexing of web content.</li>
-                        <li>Advanced Data Structures: Designed and implemented a custom Inverted Index and PageSet structures to support scalable and performant search operations, including intersection-based query resolution.</li>
-                        <li>Text Processing Pipeline: Built a sophisticated text preprocessing system, integrating custom stemming, stop word filtering, and non-alphabetic character removal to optimize indexed data for accurate and relevant search results.</li>
-                      </ul>
+                        <p class="lang">Languages: Java</p>
+                        <h3>Brief Description</h3>
+                        <p>For my first group coding project, I collaborated on building a domain-specific web crawler to parse and extract data for web content indexing. My primary contribution was designing and implementing the web crawler using recursive logic and the Jsoup library, ensuring efficient data collection. After the project was completed, I thoroughly reviewed all aspects of the system, including the custom Inverted Index, PageSet structures, and the text processing pipeline that optimized indexed data through stemming, stop word filtering, and non-alphabetic character removal. This comprehensive review gave me a well-rounded understanding of data collection, scalable high-performance search operations, and significantly broadened my technical and collaborative skills.</p>
+                        <h4>Insights</h4>
+                        <ul>
+                            <li> This search engine is capable of indexing and searching any specified domain website! </li>
+                        </ul>
                     </div>
                     <div class="project-media">
                       <video class="video-player" controls>
@@ -232,12 +232,13 @@
                 <h2 class="project-name">ePortfolio</h2>
                 <div class="project">
                     <div class="project-description">
-                      <p>Languages: HTML, CSS, JavaScript, Git</p>
-                      <ul>
-                        <li>Form Handling: Integrated a simple database to store contact form submissions, enabling efficient data management and retrieval for follow-up communications.</li>
-                        <li>Interactive Features: Implemented dynamic content loading and interactive elements using OpenWeatherMap API and JavaScript, enhancing user engagement and site functionality.</li>
-                        <li>Version Control: Utilized Git for version control, managing codebase changes and collaborating effectively with team members through GitHub.</li>
-                      </ul>
+                        <p class="lang">Languages: HTML, CSS, JavaScript, Git</p>
+                        <h3>Brief Description</h3>
+                        <p>For this project, I independently developed a dynamic website with integrated form handling and interactive features. I implemented interactive elements using the OpenWeatherMap API and JavaScript, enabling dynamic content loading to enhance user engagement. A simple database was created to store contact form submissions, ensuring efficient data management and retrieval for follow-up communications. The entire project was managed using Git and GitHub for version control, allowing me to track progress and maintain a clean codebase. Through this project, I gained hands-on experience with responsive design using HTML, CSS, and JavaScript, as well as a comprehensive understanding of database integration, API usage, and delivering a functional and engaging user experience.</p>
+                        <h4>Insights</h4>
+                        <ul>
+                            <li> First project that used a JavaScript implementation </li>
+                        </ul>
                     </div>
                     <div class="project-media">
                       <video class="video-player" controls>
@@ -245,6 +246,26 @@
                         Your browser does not support the video tag.
                       </video>
                       <a href="https://github.com/atienze/atienze.github.io" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <h2 class="project-name">Sierpinski Triangle</h2>
+                <div class="project">
+                    <div class="project-description">
+                        <p class="lang">Languages: Python</p>
+                        <h3>Brief Description</h3>
+                        <p>This project involved implementing a graphical representation of the Sierpinski triangle using the Chaos Game algorithm. The code utilizes Python's turtle library to dynamically draw the fractal pattern by iterating through random point selections and midpoint calculations. The Sierpinski triangle is generated by selecting random corners of the triangle and repeatedly calculating midpoints to create a fractal shape. A custom color gradient was applied to the points based on their proximity to the corners, enhancing the visual appeal of the generated fractal. The final output was generated through a loop that updated the canvas after every 1,000 iterations, ensuring a fluid and responsive rendering process.</p>
+                        <h4>Insights</h4>
+                        <ul>
+                            <li> With the given code you can adjust the size of the triangle to whatever you'd like! </li>
+                        </ul>
+                    </div>
+                    <div class="project-media">
+                      <video class="video-player" controls>
+                        <source src="runtime_videos/sierpinski_runtime_behavior.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <a href="https://github.com/atienze/SierpinksiTriangle" target="_blank" class="github-link">View on GitHub</a>
                     </div>
                 </div>
             </div>

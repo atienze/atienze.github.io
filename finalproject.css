@@ -157,27 +157,6 @@ main{
     text-align: center;
 
 }
-/* ALL THESE DECLARATIONS are for projects section*/
-ul h3{
-    padding: 10px;
-    text-align: center;
-    color: #2c592f;
-
-}
-ul{
-    padding: 20px;
-    list-style-type:square;
-}
-li{
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-li:hover{
-    transform: scale(1.05);
-    color: #2b3137;
-}
-/* END OF DECLARATIONS */
 footer{
     padding: 50px;
     background-color: #2c592f;
@@ -205,8 +184,37 @@ footer{
 }
 .project-description {
     flex: 1;
+    text-align: center;
+    font-size: 15px;
     min-width: 300px;
     padding: 10px;
+}
+.project-description h3{
+    padding: 10px;
+    text-align: center;
+    color: #2c592f;
+
+}
+.project-description h4{
+    padding: 10px;
+    text-align: left;
+    color: #2c592f;
+}
+.project-description ul{
+    padding-left: 25px;
+    list-style-type:square;
+}
+.project-description p{
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.project-description li{
+    text-align: left;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.project-description li:hover, .project-description p:hover{
+    transform: scale(1.05);
+    color: #2b3137;
 }
 .project-name {
     font-weight: bold;
@@ -214,8 +222,8 @@ footer{
     text-align: center;
     margin-bottom: 30px;
 }
-.project-description p{
-    float: left;
+.project-description .lang{
+    text-align: left;
     font-weight: bold;
     font-size: small;
     margin-bottom: 10px;
@@ -225,6 +233,7 @@ footer{
     flex: 1;
     min-width: 300px;
     padding: 10px;
+    padding-top: 20px;
     text-align: center;
 }
   
