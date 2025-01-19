@@ -25,7 +25,7 @@ function submitForm(event) {
     })
     .then(response => {
         console.log('Response:', response);
-        if (!response.ok) {
+        if (response.status !== 200) {
             throw new Error('Network response was not ok');
         }
         return response.text();
