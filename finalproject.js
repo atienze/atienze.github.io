@@ -42,7 +42,7 @@ function submitForm(event) {
         console.error('Error:', error);
         
         // show an alert to the user. PROBLEM: This alert is always getting ran but the data is still being sent to the Google Sheet
-        // alert('There was an error submitting the form.')
+        alert('There was an error submitting the form.')
 
         window.location.href = 'https://atienze.github.io/index.html';
     });
