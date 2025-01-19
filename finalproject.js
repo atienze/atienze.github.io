@@ -35,7 +35,7 @@ function submitForm(event) {
         alert("Thank you for submitting your information!");
 
         // redirect to another page
-        window.location.href = 'https://atienze.github.io/index.html';
+        // window.location.href = 'https://atienze.github.io/index.html';
     })
     .catch(error => {
         // handle errors
@@ -44,7 +44,7 @@ function submitForm(event) {
         // show an alert to the user. PROBLEM: This alert is always getting ran but the data is still being sent to the Google Sheet
         alert('There was an error submitting the form.')
 
-        window.location.href = 'https://atienze.github.io/index.html';
+        // window.location.href = 'https://atienze.github.io/index.html';
     });
 }
     
