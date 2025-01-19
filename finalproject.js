@@ -11,17 +11,16 @@ function submitForm(event) {
         alert('Please enter a valid email address.');
         return;
     }
-    
-        // create a FormData object
-    var formData = new FormData();
-    formData.append("myName", name);
-    formData.append("myEmail", email);
-    formData.append("myQuestion", answer);
+
+    // create URL parameters
+    var params = new URLSearchParams();
+    params.append("myName", name);
+    params.append("myEmail", email);
+    params.append("myQuestion", answer);
 
     // send the data to Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbz93PZhNlbxxxQvApJSpdNTOhiIHjdl8Ii6a-Z6SAU5uVjsilPKRosh3wSAHkjVSikD/exec', {
-        method: 'GET',
-        body: formData 
+    fetch('https://script.google.com/macros/s/AKfycbz93PZhNlbxxxQvApJSpdNTOhiIHjdl8Ii6a-Z6SAU5uVjsilPKRosh3wSAHkjVSikD/exec?' + params.toString(), {
+        method: 'GET'
     })
     .then(response => {
         console.log('Response:', response);
@@ -41,10 +40,9 @@ function submitForm(event) {
         // handle errors
         console.error('Error:', error);
         
-        // show an alert to the user. PROBLEM: This alert is always getting ran but the data is still being sent to the Google Sheet
-        alert('There was an error submitting the form.')
+        // show an alert to the user
+        alert('There was an error submitting the form.');
 
         // window.location.href = 'https://atienze.github.io/index.html';
     });
 }
-    
