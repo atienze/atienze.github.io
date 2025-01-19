@@ -31,16 +31,14 @@ function submitForm(event) {
     })
     .then(data => {
         console.log('Success:', data);
+        
         alert("Thank you for submitting your information!");
 
-        // redirect to another page
         // window.location.href = 'https://atienze.github.io/index.html';
     })
     .catch(error => {
-        // handle errors
-        console.error('Error:', error);
+        console.error('Error Occurred:', error);
         
-        // show an alert to the user
         alert('There was an error submitting the form.');
 
         // window.location.href = 'https://atienze.github.io/index.html';
