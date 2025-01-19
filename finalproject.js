@@ -19,8 +19,8 @@ function submitForm(event) {
     formData.append("myQuestion", answer);
 
     // send the data to Google Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbx7ooLmwMjOoP3t3OgPZqGqbaNIc07YcOoRRd7JjD0jiqVjqGBNq6w1EduyKQwg3txl/exec', {
-        method: 'POST', 
+    fetch('https://script.google.com/macros/s/AKfycbz93PZhNlbxxxQvApJSpdNTOhiIHjdl8Ii6a-Z6SAU5uVjsilPKRosh3wSAHkjVSikD/exec', {
+        method: 'GET',
         body: formData 
     })
     .then(response => {
