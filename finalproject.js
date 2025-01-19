@@ -34,13 +34,13 @@ function submitForm(event) {
         
         alert("Thank you for submitting your information!");
 
-        // window.location.href = 'https://atienze.github.io/index.html';
+        window.location.href = 'https://atienze.github.io/index.html';
     })
     .catch(error => {
         console.error('Error Occurred:', error);
         
         alert('There was an error submitting the form.');
 
-        // window.location.href = 'https://atienze.github.io/index.html';
+        window.location.href = 'https://atienze.github.io/index.html';
     });
 }
