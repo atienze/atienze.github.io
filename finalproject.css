@@ -237,12 +237,19 @@ footer{
     text-align: center;
 }
   
-.project-media video {
+.project-media video{
     max-width: 100%;
     width: 80%;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.project-media img {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
