@@ -186,6 +186,7 @@ footer{
     flex: 1;
     text-align: center;
     font-size: 15px;
+    font-weight: 100;
     min-width: 300px;
     padding: 10px;
 }
@@ -224,13 +225,11 @@ footer{
 }
 .project-description .lang{
     text-align: left;
-    font-weight: bold;
     font-size: small;
     margin-bottom: 10px;
 }
 .project-description .date{
     text-align: right;
-    font-weight: bold;
     font-size: small;
     margin-bottom: 10px;
 }
