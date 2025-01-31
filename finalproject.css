@@ -228,6 +228,12 @@ footer{
     font-size: small;
     margin-bottom: 10px;
 }
+.project-description .date{
+    text-align: right;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 10px;
+}
   
 .project-media {
     flex: 1;
