@@ -128,7 +128,7 @@ body{
     max-height: 30%;
     background: linear-gradient(0deg, #2c592f, #ebfffc);
     color: #fff;
-    margin: 25px 0;
+    margin: 25px auto;
     padding: 20px 10px;
     text-align: center;
     border-radius: 15%;
@@ -161,7 +161,7 @@ body{
     background-color: #2b3137; 
     color: #fff; 
 }
-.weathertext{
+.weather-text{
     font-weight: bold;
     font-style: italic;
     font-size: 15px;
@@ -177,7 +177,7 @@ body{
     background: #edeef0;
     clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
 }
-/* To Accomodate for Smartphones */
+/* To Accommodate for Smartphones */
 @media (max-width: 600px) {
     .education-wrapper {
         flex-direction: column;
@@ -194,12 +194,11 @@ body{
         padding: 15px;
     }
 
-    .weathertext {
+    .weather-text {
         font-size: 12px;
     }
 
     .education-background {
-        padding: 20px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

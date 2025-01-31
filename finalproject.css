@@ -311,4 +311,39 @@ footer{
         padding: 20px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+
+    .navbar a {
+        padding: 10px 2%;
+    }
+
+    .banner-content h1, .banner-content p {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .sideleft, .sideright {
+        width: 100%;
+        float: none;
+    }
+
+    .photos img {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-description, .project-media {
+        min-width: 100%;
+        padding: 10px 0;
+    }
+
+    .github-link {
+        width: 100%;
+    }
 }
